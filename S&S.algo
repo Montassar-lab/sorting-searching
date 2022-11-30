@@ -1,0 +1,21 @@
+ALGORITHM sorting & search
+VAR
+    T1 : ARRAY_OF INTEGER := [5,4,22,-1,40];
+    T2 : ARRAY_OF INTEGER[];
+    i,j : INTEGER := 0;
+BEGIN
+    DO
+        FOR i FROM 1 TO T1.length-1 STEP 1  DO
+        
+            if (T1[i]>T1[i+1]) THEN
+                swap (T1[i], T1[i+1])
+            ENF_IF   
+              
+        
+        END_FOR
+
+    until FOR j FROM 1 TO T1.length-1 STEP 1  DO
+                T1[j]<T1[j+1]
+          END_FOR
+
+END
